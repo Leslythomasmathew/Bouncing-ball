@@ -17,7 +17,7 @@ window.onerror = function(message, source, lineno, colno, error) {
 
 // setup canvas
 
-const para = document.querySelector('p');
+const para = document.querySelector('.scoreboard');
 let count = 0;
 
 const canvas = document.querySelector('canvas');
@@ -162,7 +162,7 @@ class EvilCircle extends Shape {
         if (distance < this.size + ball.size) {
           ball.exists = false;
           count--;
-          para.textContent = 'bouncing ball: ' + count;
+          para.textContent = 'ball count: ' + count;
         }
       }
     }
@@ -187,7 +187,7 @@ while (balls.length < 25) {
   );
   balls.push(ball);
   count++;
-  para.textContent = 'bouncing ball: ' + count;
+  para.textContent = 'ball count: ' + count;
 }
 
 const evilBall = new EvilCircle(random(0, width), random(0, height));

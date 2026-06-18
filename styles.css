@@ -13,19 +13,7 @@ body {
   background-color: #000;
 }
 
-h1 {
-  font-size: 2rem;
-  letter-spacing: -1px;
-  position: absolute;
-  margin: 0;
-  top: -4px;
-  right: 5px;
-
-  color: transparent;
-  text-shadow: 0 0 4px white;
-}
-
-p {
+p.scoreboard {
   position: absolute;
   margin: 0;
   top: 15px;
@@ -43,4 +31,36 @@ p {
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
   z-index: 10;
   pointer-events: none;
+}
+
+.instructions-box {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  max-width: 300px;
+  padding: 15px 20px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  color: #fff;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+  z-index: 10;
+  pointer-events: none;
+}
+
+.instructions-box h2 {
+  margin: 0 0 10px 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+  letter-spacing: -0.5px;
+  text-shadow: 0 0 4px rgba(255, 255, 255, 0.5);
+}
+
+.instructions-text {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  color: #ccc;
 }
