@@ -162,7 +162,7 @@ class EvilCircle extends Shape {
         if (distance < this.size + ball.size) {
           ball.exists = false;
           count--;
-          para.textContent = 'Ball count: ' + count;
+          para.textContent = 'bouncing ball: ' + count;
         }
       }
     }
@@ -187,7 +187,7 @@ while (balls.length < 25) {
   );
   balls.push(ball);
   count++;
-  para.textContent = 'Ball count: ' + count;
+  para.textContent = 'bouncing ball: ' + count;
 }
 
 const evilBall = new EvilCircle(random(0, width), random(0, height));
